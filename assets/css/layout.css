@@ -1,0 +1,149 @@
+/* ----- レイアウト ----- */
+.layout {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main-content-wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 2;
+}
+
+/* ----- 右ペイン（sidebar） ----- */
+.sidebar {
+    flex: 1;
+    padding: 24px 24px;
+    margin-left: 32px;
+    background: #f7f7f7;
+    border-radius: var(--radius-md); 
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+/* ----- ナビゲーション（ヘッダー） ----- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.site-title {
+    position: relative;
+    font-family: "Poppins", "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+.site-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, #a0c4ff, #bdb2ff);
+    border-radius: 2px;
+    opacity: 0.7;
+}
+.site-title a {
+    text-decoration: none;
+    color: var(--text);
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+.site-title a:hover {
+    opacity: 0.6;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-list a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+.nav-list a:hover {
+    color: var(--accent);
+    opacity: 0.6;
+}
+
+/* ----- ボタン共通 ----- */
+.btn {
+    padding: 12px 28px;
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* ----- ヒーローセクション ----- */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+
+/* ----- サイドトグル（スマホ用） ----- */
+.side-toggle {
+    display: none;
+}
+
+/* ----- フッター ----- */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
