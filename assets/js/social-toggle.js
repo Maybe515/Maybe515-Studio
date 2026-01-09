@@ -9,17 +9,19 @@ export function initSocialToggle() {
 
         toggle.addEventListener("click", () => {
             const isOpen = more.classList.contains("open");
+            const style = window.getComputedStyle(more);
+            const paddingBottom = parseInt(style.paddingBottom);
 
             if (isOpen) {
                 more.style.maxHeight = "0px";
+                more.style.paddingBottom = paddingBottom + "px";
                 more.classList.remove("open");
                 toggle.textContent = "▼ もっと見る";
             } else {
-                const style = window.getComputedStyle(more);
                 const paddingTop = parseInt(style.paddingTop);
-                const paddingBottom = parseInt(style.paddingBottom);
 
                 more.style.maxHeight = (more.scrollHeight + paddingTop + paddingBottom) + "px";
+                more.style.paddingBottom = paddingBottom + 18 + "px";
                 more.classList.add("open");
                 toggle.textContent = "▲ 閉じる";
             }
