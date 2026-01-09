@@ -24,8 +24,10 @@ import { initSlideshow } from "./slideshow.js";
 import { initSocialToggle } from "./social-toggle.js";
 import { initSidebarToggle } from "./sidebar-toggle.js";
 import { initHeaderOffset } from "./header-offset.js";
+import { updateDeviceState } from "./responsive-state.js";
 
 initSlideshow();
 initSocialToggle();
 initSidebarToggle();
 initHeaderOffset();
+updateDeviceState();

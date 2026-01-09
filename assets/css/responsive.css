@@ -1,7 +1,18 @@
+
 /* ----- 1200px以下 ----- */
 @media (max-width: 1200px) {
-    .project-grid { 
-        flex-direction: column; 
+    
+    .side-toggle {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar {
+        transition-delay: 0.1s;
+    }
+
+    .project-grid {
+        flex-direction: column;
     }
 }
 
@@ -16,6 +27,7 @@
         margin-top: 20px;
         box-shadow: var(--shadow-sm);
     }
+
     .sidebar-icon {
         width: 80px;
         height: 80px;
@@ -25,9 +37,11 @@
     .hero {
         padding: 80px 20px;
     }
+
     .hero-title {
         font-size: 2rem;
     }
+
     .hero-subtitle {
         font-size: 1rem;
     }
@@ -43,11 +57,12 @@
         max-width: 260px;
         text-align: center;
     }
-    
+
     /* セクション共通 */
     .section {
         padding: 60px 20px;
     }
+
     .section-title {
         font-size: 1.6rem;
     }
@@ -84,14 +99,43 @@
         font-size: 1.6rem;
         cursor: pointer;
         z-index: 1100;
+
+        opacity: 0;
+        transition: opacity 0.3s ease, box-shadow 0.25s ease;
+        transition-delay: 0.3s;
+    }
+
+    body.is-mobile .side-toggle {
+        opacity: 1;
+    }
+
+    .side-toggle:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .side-toggle:active {
+        transform: translateY(0) scale(0.97);
+        box-shadow: var(--shadow-sm);
+    }
+
+    @keyframes sideToggleFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .sidebar {
         position: fixed;
-        top: var(--header-height);
+        top: calc(var(--header-height) + 60px);
         right: 0;
         width: 260px;
-        height: calc(100vh - var(--header-height));
         background: #fff;
         transform: translateX(100%);
         transition: transform 0.3s ease;

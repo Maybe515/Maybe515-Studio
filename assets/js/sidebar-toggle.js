@@ -1,13 +1,11 @@
 // sidebar-toggle.js
 export function initSidebarToggle() {
-    document.addEventListener("DOMContentLoaded", () => {
-        const toggle = document.querySelector(".side-toggle");
-        const pane = document.querySelector(".sidebar");
+    const sidebar = document.querySelector(".sidebar");
+    const toggleBtn = document.querySelector(".side-toggle");
 
-        if (!toggle || !pane) return;
+    if (!sidebar || !toggleBtn) return;
 
-        toggle.addEventListener("click", () => {
-            pane.classList.toggle("open");
-        });
+    toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
     });
 }
