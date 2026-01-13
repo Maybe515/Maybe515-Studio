@@ -11,6 +11,7 @@ export function initHeaderOffset() {
         };
 
         updateOffset();
+        window.addEventListener("load", updateOffset);
         window.addEventListener("resize", updateOffset);
     });
 }
