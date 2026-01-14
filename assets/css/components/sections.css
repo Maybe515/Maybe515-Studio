@@ -1,7 +1,7 @@
 /* ----- セクション共通 ----- */
 .section {
-    padding: 80px 20px;
-    margin-bottom: 80px;
+    padding: 40px 20px;
+    /* margin-bottom: 80px; */
     text-align: center;
 }
 
@@ -13,12 +13,12 @@
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 4.5vw, 2rem);
     margin-bottom: 10px;
 }
 
 .section-desc {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
     color: #555;
     margin-bottom: 40px;
 }

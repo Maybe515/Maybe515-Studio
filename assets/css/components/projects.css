@@ -1,8 +1,4 @@
 /* ----- プロジェクトセクション ----- */
-.projects {
-    margin-top: 80px;
-}
-
 .project-grid {
     display: flex;
     gap: 24px;
@@ -27,11 +23,11 @@
 
 .project-card h3 {
     margin-bottom: 12px;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
 }
 
 .project-card p {
-    font-size: 0.95rem;
+    font-size: clamp(0.85rem, 3vw, 0.95rem);
     color: #555;
 }
 
