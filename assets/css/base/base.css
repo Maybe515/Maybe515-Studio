@@ -19,6 +19,9 @@ html {
     --transition-mid: 0.25s ease;
 }
 
+#gallery, #projects {
+    scroll-margin-top: var(--header-height);
+}
 
 body {
     width: 100%;
