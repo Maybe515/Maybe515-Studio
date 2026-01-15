@@ -1,5 +1,3 @@
-// slideshow.js
-
 export async function initSlideshow() {
     const res = await fetch("./data/slideshow.json");
     const imageList = await res.json();

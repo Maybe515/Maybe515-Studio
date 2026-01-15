@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FanArt Gallery | Maybe515 Studio</title>
+    <title>Fan Art Gallery | Maybe515 Studio</title>
 
     <!-- main.js 内で CSS 自動読み込み -->
     <script type="module" src="assets/js/core/main.js" defer></script>
@@ -16,49 +16,55 @@
     <header class="site-header">
         <div class="site-title"><a href="index.html">Maybe515 Studio – MAYBEL</a></div>
 
+        <!-- ナビゲ－ション -->
         <nav>
             <ul class="nav-list">
-                <li><a href="#top">Top</a></li>
-                <li><a href="index.html#profile">Profile</a></li>
+                <li><a href="index.html#top">Top</a></li>
+                <li><a href="profile.html">Profile</a></li>
                 <li><a href="index.html#gallery">Gallery</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ===== Hero ===== -->
-    <section class="hero">
-        <h2 class="hero-title">ファンアートギャラリー</h2>
-        <p class="hero-subtitle">これまでにいただいたファンアートをまとめています。</p>
-    </section>
+    <div class="container">
+        <!-- <div class="layout"> -->
+            <!-- ===== ヒーローセクション ===== -->
+            <section class="hero">
+                <h2 class="hero-title">ファンアートギャラリー</h2>
+                <p class="hero-subtitle">これまでにいただいたファンアートをまとめています。</p>
+            </section>
 
-    <!-- ===== ギャラリーセクション ===== -->
-    <section class="section gallery-section" id="gallery">
-        <h2 class="section-title">ギャラリー</h2>
-        <p class="section-desc">サムネイルをクリックすると拡大表示できます。</p>
+            <!-- ===== ギャラリーセクション ===== -->
+            <section class="section gallery-section" id="gallery">
+                <h2 class="section-title">ギャラリー</h2>
+                <p class="section-desc">サムネイルをクリックすると拡大表示できます。</p>
 
-        <div class="fanart-grid" id="fanartGrid"></div>
-    </section>
+                <!-- ファンアート -->
+                <div class="fanart-grid" id="fanartGrid"></div>
+            </section>
 
-    <!-- ===== モーダル（拡大表示） ===== -->
-    <div class="fanart-modal" id="fanartModal">
-        <span class="fanart-modal-close" id="fanartModalClose">&times;</span>
+            <!-- ===== モーダル（拡大表示） ===== -->
+            <div class="fanart-modal" id="fanartModal">
+                <span class="fanart-modal-close" id="fanartModalClose">&times;</span>
 
-        <span class="fanart-modal-nav fanart-modal-prev" id="fanartPrev">&#10094;</span>
-        <span class="fanart-modal-nav fanart-modal-next" id="fanartNext">&#10095;</span>
+                <span class="fanart-modal-nav fanart-modal-prev" id="fanartPrev">&#10094;</span>
+                <span class="fanart-modal-nav fanart-modal-next" id="fanartNext">&#10095;</span>
 
-        <div class="fanart-modal-content">
-            <img id="fanartModalImg" src="" alt="">
-            <p class="fanart-modal-caption" id="fanartModalCaption"></p>
-        </div>
+                <div class="fanart-modal-content">
+                    <img id="fanartModalImg" src="" alt="">
+                    <p class="fanart-modal-caption" id="fanartModalCaption"></p>
+                </div>
+            </div>
+        <!-- </div> -->
+
+        <!-- ===== フッター ===== -->
+        <footer class="site-footer">
+            <p>© 2025-2026 Maybe515. All rights reserved.</p>
+        </footer>
     </div>
-
-    <!-- ===== フッター ===== -->
-    <footer class="site-footer">
-        <p>© 2025-2026 Maybe515. All rights reserved.</p>
-    </footer>
-
 </body>
 
 </html>

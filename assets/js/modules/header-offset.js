@@ -1,4 +1,4 @@
-// header-offset.js
+// ヘッダー高さ取得
 export function initHeaderOffset() {
     document.addEventListener("DOMContentLoaded", () => {
         const header = document.querySelector(".site-header");

@@ -12,37 +12,36 @@
 
 <body data-page="home" id="top">
 
-    <!-- ヘッダー -->
+    <!-- ===== ヘッダー ===== -->
     <header class="site-header">
         <div class="site-title">
             <a href="#top">Maybe515 Studio – MAYBEL</a>
         </div>
 
+        <!-- ナビゲーション -->
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#top">Top</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html" class="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-
         <div class="layout">
 
-            <!-- スマホ用サイドボタン -->
+            <!-- サイドバートグルボタン(スマホ用) -->
             <button class="side-toggle" aria-label="Open sidebar">☰</button>
 
             <div class="main-content-wrapper">
-
                 <!-- メイン -->
                 <div class="main-content">
 
-                    <!-- ヒーローセクション -->
+                    <!-- ===== ヒーローセクション ===== -->
                     <main class="hero">
                         <h1 class="hero-title">めいびぃさんの隠れ家</h1>
                         <p class="hero-subtitle">
@@ -50,11 +49,12 @@
                         </p>
                     </main>
 
-                    <!-- 作品セクション（スライドショー） -->
+                    <!-- ===== ギャラリーセクション ===== -->
                     <section class="section" id="gallery">
                         <h2 class="section-title">作品ギャラリー</h2>
                         <p class="section-desc">デジタルアート作品の一部を紹介します。</p>
 
+                        <!-- スライドショー -->
                         <div class="slideshow-container" id="slideshow"></div>
                         <div class="dots" id="dots"></div>
 
@@ -63,48 +63,17 @@
                         </div>
                     </section>
 
-                    <!-- プロジェクトセクション -->
+                    <!-- ===== プロジェクトセクション ===== -->
                     <section class="section projects" id="projects">
                         <h2 class="section-title">プロジェクト</h2>
                         <p class="section-desc">技術的な取り組みやツール開発を一部紹介します。</p>
 
-                        <div class="project-grid">
-
-                            <!-- カードは card-base を併用 -->
-                            <a href="https://github.com/Maybe515/Nostr-Observe-chan"
-                                class="project-card card-base lang-js">
-                                <h3>Nostr監視ちゃん</h3>
-                                <p>Nostrのkind:1イベントを監視し、指定キーワードと一致したイベントをDiscordにEmbed通知するbot</p>
-                                <div class="project-langs">
-                                    <span class="project-lang lang-js">JavaScript</span>
-                                    <span class="project-lang lang-batch">Batch</span>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/Maybe515/Nostr-Link-chan"
-                                class="project-card card-base lang-js">
-                                <h3>Nostrリンクちゃん</h3>
-                                <p>Nostrの指定Pubkey宛のkind: 1, 6, 7, 9735を取得してDiscordにEmbed通知するbot</p>
-                                <div class="project-langs">
-                                    <span class="project-lang lang-js">JavaScript</span>
-                                    <span class="project-lang lang-batch">Batch</span>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/Maybe515/ZZZ-dmgCalc" class="project-card card-base lang-html">
-                                <h3>ゼンレスゾーンゼロ ダメージ計算ツール</h3>
-                                <p>ゼンゼロのダメージを簡単に計算できるブラウザベースのツール</p>
-                                <div class="project-langs">
-                                    <span class="project-lang lang-html">HTML</span>
-                                    <span class="project-lang lang-js">JavaScript</span>
-                                    <span class="project-lang lang-css">CSS</span>
-                                </div>
-                            </a>
-                        </div>
+                        <!-- プロジェクトリンク -->
+                        <div class="project-grid"></div>
                     </section>
                 </div>
 
-                <!-- 右ペイン -->
+                <!-- ===== サイドバー ===== -->
                 <aside class="sidebar">
                     <div class="sidebar-content">
                         <div class="sidebar-profile">
@@ -112,9 +81,7 @@
                             <div class="sidebar-username">めいびぃ</div>
 
                             <h3>About Me</h3>
-                            <p>
-                                旅行やゲーム、ダーツと幅広く色んなことをしています。イラスト描いたり、ツールを作ってたりもします。
-                            </p>
+                            <p>旅行やゲーム、ダーツと幅広く色んなことをしています。イラスト描いたり、ツールを作ってたりもします。</p>
 
                             <h3>Connect with me</h3>
                             <div class="sidebar-social">
@@ -125,23 +92,17 @@
                             </div>
                         </div>
 
-                        <h3>News / Blog</h3>
-                        <ul>
-                            <li><a href="#">記事タイトル1</a></li>
-                            <li><a href="#">記事タイトル2</a></li>
-                            <li><a href="#">記事タイトル3</a></li>
-                        </ul>
+                        <h3>Blog / News</h3>
+                        <ul class="blog-list"></ul>
                     </div>
-
                 </aside>
-
             </div>
         </div>
 
+        <!-- ===== フッター ===== -->
         <footer class="site-footer">
             <p>© 2025-2026 Maybe515. All rights reserved.</p>
         </footer>
-
     </div>
 </body>
 

@@ -1,5 +1,3 @@
-// social-toggle.js
-
 export function initSocialToggle() {
     document.addEventListener("DOMContentLoaded", () => {
         const toggle = document.querySelector(".social-toggle");
