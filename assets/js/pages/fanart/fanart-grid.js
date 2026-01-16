@@ -2,7 +2,7 @@ import { initModal } from "./modal.js";
 import { getBasePath } from "../../utils/base-path.js";
 
 const fanartGrid = document.getElementById("fanartGrid");
-const BASE_PATH = getBasePath()
+const BASE_PATH = getBasePath();
 const JSON_PATH = BASE_PATH + "/data/fanart/fanart-list.json";
 const IMG_PATH = BASE_PATH + "/assets/img/fanart/";
 let images = [];
