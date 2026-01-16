@@ -1,3 +1,4 @@
+// サイドバー高さ調整
 function updateSidebarHeight() {
     const sidebar = document.querySelector(".sidebar");
     if (!sidebar) return;
@@ -18,6 +19,7 @@ function updateSidebarHeight() {
     document.documentElement.style.setProperty("--sidebar-top", offset + "px");
 }
 
+// PC/Mobile UI切り替え
 export function updateDeviceState() {
     if (window.innerWidth <= 825) {
         document.body.classList.add("is-mobile");

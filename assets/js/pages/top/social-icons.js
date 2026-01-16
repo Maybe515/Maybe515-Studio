@@ -1,11 +1,11 @@
 export async function initSocialIcons() {
-    const res = await fetch("./data/social.json");
+    const res = await fetch("/data/top/social-links.json");
     const data = await res.json();
 
     const primaryContainer = document.querySelector(".social-icons");
     const moreContainer = document.querySelector(".social-more");
 
-    const BASE_PATH = "assets/img/icons/";
+    const BASE_PATH = "/assets/img/social/";
 
     // メインアイコン生成
     data.primary.forEach(item => {

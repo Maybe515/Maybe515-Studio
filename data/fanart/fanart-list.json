@@ -1,17 +1,17 @@
 [
     {
-        "src": "image1.jpg",
-        "full": "image1.jpg",
+        "src": "image1.webp",
+        "full": "image1.webp",
         "caption": "Illustration by ○○○○"
     },
     {
-        "src": "image2.jpg",
-        "full": "image2.jpg",
+        "src": "image2.webp",
+        "full": "image2.webp",
         "caption": "Artwork by ○○○○"
     },
     {
-        "src": "image3.jpg",
-        "full": "image3.jpg",
+        "src": "image3.webp",
+        "full": "image3.webp",
         "caption": "FanArt by ○○○○"
     }
 ]

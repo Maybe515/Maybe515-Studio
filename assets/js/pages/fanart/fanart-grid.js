@@ -1,11 +1,11 @@
-import { initModal } from "../modules/modal.js";
+import { initModal } from "./modal.js";
 
 const fanartGrid = document.getElementById("fanartGrid");
-const BASE_PATH = "assets/img/fanart/";
+const BASE_PATH = "/assets/img/fanart/";
 let images = [];
 
 export async function loadFanart() {
-    const res = await fetch("./data/fanart.json");
+    const res = await fetch("/data/fanart/fanart-list.json");
     images = await res.json();
 
     images.forEach((item, index) => {
