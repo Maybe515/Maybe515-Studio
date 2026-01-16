@@ -44,7 +44,7 @@
     border: none;
     color: #555;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: clamp(0.8rem ,3vw ,0.9rem);
     padding: 4px 0;
     transition: 0.2s;
 }
