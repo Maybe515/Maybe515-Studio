@@ -174,22 +174,21 @@
         padding-bottom: 15px;
     }
 
-    .blog-list {
-        margin: 10px 0;
+    .sidebar-profile p {
+        margin-top: 10px;
     }
 
     .sidebar-social {
-        margin-top: 15px;
-    }
-
-    .social-icon {
-        width: 32px;
-        height: 32px;
+        margin-top: 10px;
     }
 
     .social-icon img {
-        width: 15px;
-        height: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .blog-list {
+        margin: 10px 0;
     }
 
     .section {
@@ -252,7 +251,7 @@
         gap: 6px;
     }
 
-    .skill-block ul {
+    .skill-icons {
         margin: 8px 0;
     }
 

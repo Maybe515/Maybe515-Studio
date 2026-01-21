@@ -9,7 +9,7 @@
     {
       "name": "GitHub",
       "url": "https://github.com/Maybe515",
-      "icon": "github.svg",
+      "icon": "Github.svg",
       "class": "social-github"
     },
     {
@@ -21,14 +21,9 @@
   ],
   "more": [
     {
-      "name": "YouTube",
-      "url": "#",
-      "icon": "youtube.svg"
-    },
-    {
-      "name": "TikTok",
-      "url": "#",
-      "icon": "tiktok.svg"
+      "name": "Skeb",
+      "url": "https://skeb.jp/@Maybe515",
+      "icon": "skeb.svg"
     },
     {
       "name": "Bluesky",

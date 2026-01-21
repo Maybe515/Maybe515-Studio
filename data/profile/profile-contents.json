@@ -1,12 +1,12 @@
 {
   "skills": {
-    "frontend": ["HTML", "CSS", "JavaScript", "jQuery", "Android", "AppInventor"],
-    "backend": ["C", "C++", "C#", "Java", "Python", "Ruby", "node.js ", "npm", "SQLite", ".NET", "DiscordBot", "RaspberryPi"],
-    "tools": ["Windows", "PowerShell", "Cmd", "VS Code", "Visual Studio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
+    "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "Android", "AppInventor"],
+    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "RaspberryPi"],
+    "tools": ["Windows", "PowerShell", "Cmd", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
   },
   "links": [
-    { "name": "GitHub", "url": "https://github.com/Maybe515", "icon": "github.svg" },
     { "name": "X", "url": "https://x.com/Maybe515", "icon": "x.svg" },
+    { "name": "GitHub", "url": "https://github.com/Maybe515", "icon": "github.svg" },
     { "name": "Pixiv", "url": "https://www.pixiv.net/users/14572354", "icon": "pixiv.svg" }
   ],
   "timeline": {

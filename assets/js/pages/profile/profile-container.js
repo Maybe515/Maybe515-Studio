@@ -1,6 +1,9 @@
+import { skillIcons } from "./skill-icons.js";
 import { getBasePath } from "../../utils/base-path.js";
+
 const BASE_PATH = getBasePath();
 const JSON_PATH = BASE_PATH + "/data/profile/profile-contents.json";
+const IMG_PATH = BASE_PATH + "/assets/img/skill";
 
 export async function initProfile() {
     const res = await fetch(JSON_PATH);
@@ -20,24 +23,24 @@ export async function initProfile() {
     ["frontend", "backend", "tools"].forEach(category => {
         if (!data.skills[category]) return;
 
-        const block = document.createElement("div");
-        block.className = "skill-block";
+        const wrapper = document.createElement("div");
+        wrapper.className = "skill-block";
 
-        block.innerHTML = `
+        wrapper.innerHTML = `
             <h5>${category}</h5>
-            <ul>
-                ${data.skills[category].map(skill => `<li>${skill}</li>`).join("")}
-            </ul>
+            <div class="skill-icons">
+                ${data.skills[category].map(skill => `<img src="${IMG_PATH}/${category}/${skillIcons[skill]}" alt="${skill}">`).join("")}
+            </div>
         `;
 
-        programingBlock.appendChild(block);
+        programingBlock.appendChild(wrapper);
     });
 
     // Others（必要なら）
     const othersBlock = document.createElement("div");
-    othersBlock.className = "skills-group";
+    othersBlock.className = "others-group";
     othersBlock.innerHTML = `<h4>Others</h4>`;
-    skillContainer.appendChild(othersBlock);
+    // skillContainer.appendChild(othersBlock);
 
 
     /* ================================

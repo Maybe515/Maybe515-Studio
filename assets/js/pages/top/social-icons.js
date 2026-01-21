@@ -7,7 +7,7 @@ export async function initSocialIcons() {
     const res = await fetch(JSON_PATH);
     const data = await res.json();
 
-    const primaryContainer = document.querySelector(".social-icons");
+    const primaryContainer = document.querySelector(".social-links");
     const moreContainer = document.querySelector(".social-more");
 
     // メインアイコン生成
@@ -15,7 +15,7 @@ export async function initSocialIcons() {
         const a = document.createElement("a");
         a.href = item.url;
         a.target = "_blank";
-        a.className = `social-icon ${item.class || ""}`;
+        a.className = "social-icon";
 
         a.innerHTML = `
             <img src="${IMG_PATH}${item.icon}" alt="${item.name}">
