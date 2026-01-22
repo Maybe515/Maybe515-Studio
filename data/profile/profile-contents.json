@@ -1,59 +1,78 @@
 {
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "Android", "AppInventor"],
-    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "RaspberryPi"],
-    "tools": ["Windows", "PowerShell", "Cmd", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
+    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "VBA", "DiscordBot", "Discordjs", "RaspberryPi"],
+    "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
   },
   "links": [
     { "name": "X", "url": "https://x.com/Maybe515", "icon": "x.svg" },
     { "name": "GitHub", "url": "https://github.com/Maybe515", "icon": "github.svg" },
-    { "name": "Pixiv", "url": "https://www.pixiv.net/users/14572354", "icon": "pixiv.svg" }
+    { "name": "pixiv", "url": "https://www.pixiv.net/users/14572354", "icon": "pixiv.svg" }
   ],
   "timeline": {
     "2026": [
-      { "month": "1", "event": "Maybe515 Studio を公開する" }
+      { "month": "1", "event": "Maybe515 Studio を公開する" },
+      { "month": "1", "event": "Skeb を稼働させる" }
     ],
     "2025": [
-      { "month": "7", "event": "Nostr監視ちゃんを公開する" },
-      { "month": "7", "event": "Nostrリンクちゃんを公開する" },
-      { "month": "9", "event": "ゼンゼロダメージ計算ツールを公開する" },
+      { "month": "", "event": "C#, Python を学習し始める" },
+      { "month": "7", "event": "Nostr監視ちゃん を公開する" },
+      { "month": "7", "event": "Nostrリンクちゃん を公開する" },
+      { "month": "9", "event": "ゼンゼロダメージ計算ツール を公開する" },
       { "month": "11", "event": "Nostrasia2025 のスライドを描く" }
     ],
     "2024": [
-      { "month": "", "event": "" }
+      { "month": "3", "event": "GitHub で初めてリポジトリを作成する" }
+    ],
+    "2023": [
+      { "month": "5", "event": "デジタルイラスト を描き始める" }
     ],
     "2019": [
-      { "month": "", "event": "ファンアート（アナログ絵）を描く" }
+      { "month": "2", "event": "ファンアート を描く" }
     ],
     "2018": [
-      { "month": "", "event": "アクセサリー（ネックレス）作りをする" }
+      { "month": "4", "event": "アクセサリー (ネックレス) 作りをする" }
     ],
     "2017": [
-      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+      { "month": "10", "event": "C言語 で チュウニズムの内部数値 (貢献値、リザルト) を計算するツール を作成する" },
+      { "month": "10", "event": "C言語 で 基数変換する計算機 を作成する" },
+      { "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
+      { "month": "", "event": "HTML, CSS を学習し始める" },
+      { "month": "", "event": "JavaScript を学習し始める" },
+      { "month": "", "event": "電子オルゴール を自作する" },
+      { "month": "", "event": "MELSEC を用いた シーケンス制御 を学習し始める" }
     ],
     "2016": [
-      { "month": "", "event": "pixiv にて作品を投稿する" },
-      { "month": "", "event": "消しゴムはんこ・切り絵を始める" },
-      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+      { "month": "4", "event": "pixiv で初めて作品を投稿する" },
+      { "month": "10", "event": "消しゴムはんこ・切り絵を始める" },
+      { "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
+      { "month": "", "event": "画像の編集加工 を学習し始める" },
+      { "month": "", "event": "IC制御 を学習し始める" },
+      { "month": "", "event": "3DCG を学習し始める" }
     ],
     "2015": [
-      { "month": "", "event": "同人サークル (MAYBEL) を開設" },
-      { "month": "", "event": "母校の体育祭の応援装飾（イラスト）を担当する" }
+      { "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
+      { "month": "11", "event": "同人サークル『MAYBEL』 を開設する" },
+      { "month": "", "event": "C言語 を学習し始める" },
+      { "month": "", "event": "VBA を学習し始める" }
     ],
     "2014": [
-      { "month": "3", "event": "美少女系イラスト（アニメ調）を描き始める" }
+      { "month": "3", "event": "美少女系イラスト (アニメ調) を描き始める" },
+      { "month": "10", "event": "MikuMikuDance で初めてアニメーションを作成する" }
     ],
     "2010": [
-      { "month": "", "event": "うごくメモ帳 で開催された格闘作品コンテストで入賞する" }
+      { "month": "?", "event": "うごくメモ帳 で開催された格闘作品コンテストで入賞する" },
+      { "month": "7", "event": "どうぶつの森で マイデザイン を作成・配布する" }
     ],
     "2009": [
-      { "month": "", "event": "うごくメモ帳にて作品を投稿する" },
-      { "month": "", "event": "ピクセルアートを描き始める" },
-      { "month": "", "event": "どうぶつの森シリーズでマイデザインを作成・配布する" },
-      { "month": "", "event": "モンハンの二次創作（マンガ、アート）を描く" }
+      { "month": "3", "event": "うごくメモ帳 で初めて作品を投稿する" },
+      { "month": "9", "event": "モンハンの二次創作 (ファンアート、マンガ) を描く" }
+    ],
+    "2008": [
+      { "month": "12", "event": "ピクセルアート を描き始める" }
     ],
     "2007": [
-      { "month": "", "event": "イラスト（主に版権・写実画）を描き始める" }
+      { "month": "12", "event": "イラスト (版権・写実画) を描き始める" }
     ]
   }
 }

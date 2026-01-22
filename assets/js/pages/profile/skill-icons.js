@@ -5,7 +5,7 @@ export const skillIcons = {
     JavaScript: "JavaScript.svg",
     TypeScript: "TypeScript.svg",
     jQuery: "JQuery.svg",
-    Android: "Android",
+    Android: "Android.svg",
     AppInventor: "MITAppInventor.svg",
 
     // backend
@@ -19,14 +19,15 @@ export const skillIcons = {
     npm: "Npm.svg",
     SQLite: "SQLite.svg",
     dotNET: "DotNet.svg",
+    VBA: "VBA.svg",
     DiscordBot: "DiscordBots.svg",
     Discordjs: "DiscordJS.svg",
     RaspberryPi: "RaspberryPi.svg",
 
     // tools
     Windows: "Windows.svg",
-    PowerShell: "Powershell.svg",
     Cmd: "Cmd.svg",
+    PowerShell: "Powershell.svg",
     VSCode: "VSCode.svg",
     VisualStudio: "VisualStudio.svg",
     GitHub: "Github.svg",

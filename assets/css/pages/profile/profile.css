@@ -211,12 +211,12 @@
 
 /* 左側ノード位置 */
 .timeline-item.left::before {
-    right: -9px;
+    right: -10px;
 }
 
 /* 右側ノード位置 */
 .timeline-item.right::before {
-    left: -9px;
+    left: -10px;
 }
 
 /* 年・月・イベント */
