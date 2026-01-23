@@ -5,6 +5,7 @@ export const skillIcons = {
     JavaScript: "JavaScript.svg",
     TypeScript: "TypeScript.svg",
     jQuery: "JQuery.svg",
+    SVG: "SVG.svg",
     Android: "Android.svg",
     AppInventor: "MITAppInventor.svg",
 
