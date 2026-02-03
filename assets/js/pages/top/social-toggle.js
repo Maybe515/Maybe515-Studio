@@ -14,6 +14,7 @@ export function initSocialToggle() {
             if (isOpen) {
                 more.style.maxHeight = "0px";
                 more.style.paddingBottom = paddingBottom - padding + "px";
+                more.style.overflow  = "hidden";
                 more.classList.remove("open");
                 toggle.textContent = "▼ もっと見る";
             } else {
@@ -23,6 +24,13 @@ export function initSocialToggle() {
                 more.style.paddingBottom = paddingBottom + padding + "px";
                 more.classList.add("open");
                 toggle.textContent = "▲ 閉じる";
+            }
+        });
+
+        more.addEventListener("transitionend", () => {
+            const isOpen = more.classList.contains("open");
+            if (isOpen) {
+                more.style.overflow  = "visible";
             }
         });
     });

@@ -20,9 +20,9 @@ export const skillIcons = {
     npm: "Npm.svg",
     SQLite: "SQLite.svg",
     dotNET: "DotNet.svg",
-    VBA: "VBA.svg",
     DiscordBot: "DiscordBots.svg",
     Discordjs: "DiscordJS.svg",
+    VBA: "VBA.svg",
     RaspberryPi: "RaspberryPi.svg",
 
     // tools

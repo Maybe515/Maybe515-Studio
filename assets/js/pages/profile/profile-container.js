@@ -3,7 +3,15 @@ import { getBasePath } from "../../utils/base-path.js";
 
 const BASE_PATH = getBasePath();
 const JSON_PATH = BASE_PATH + "/data/profile/profile-contents.json";
-const IMG_PATH = BASE_PATH + "/assets/img/skill";
+const SKILL_IMG_PATH = BASE_PATH + "/assets/img/skill";
+const SOCIAL_IMG_PATH = BASE_PATH + "/assets/img/social";
+
+const categoryIcons = {
+    "create": "✨",
+    "education": "📚",
+    "illust": "🎨",
+    "program": "💻"
+};
 
 export async function initProfile() {
     const res = await fetch(JSON_PATH);
@@ -29,7 +37,7 @@ export async function initProfile() {
         wrapper.innerHTML = `
             <h5>${category}</h5>
             <div class="skill-icons">
-                ${data.skills[category].map(skill => `<img src="${IMG_PATH}/${category}/${skillIcons[skill]}" alt="${skill}">`).join("")}
+                ${data.skills[category].map(skill => `<img src="${SKILL_IMG_PATH}/${category}/${skillIcons[skill]}" alt="${skill}">`).join("")}
             </div>
         `;
 
@@ -55,7 +63,7 @@ export async function initProfile() {
         a.className = "profile-link";
 
         a.innerHTML = `
-            <img src="${BASE_PATH}/assets/img/icons/${link.icon}" alt="${link.name}">
+            <img src="${SOCIAL_IMG_PATH}/${link.icon}" alt="${link.name}">
             <span>${link.name}</span>
         `;
 
@@ -104,7 +112,7 @@ export async function initProfile() {
                 index++;
 
                 li.innerHTML = `
-                    <div class="timeline-month">${monthNames[entry.month]}</div>
+                    <div class="timeline-month">${categoryIcons[entry.category]} ${monthNames[entry.month]}</div>
                     <div class="timeline-event">${entry.event}</div>
                 `;
 

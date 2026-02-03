@@ -41,7 +41,7 @@
 
 /* social-more */
 .social-more {
-    margin-top: 10px;
+    margin: 5px 10px 0;
     max-height: 0;
     overflow: hidden;
     display: flex;
