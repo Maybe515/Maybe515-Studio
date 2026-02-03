@@ -7,6 +7,7 @@
 - [x] skeb.svg
 
 ### Skill, Tools
-- [] csp.svg
-- [] xppen.svg
-- [] tourbox.svg
+- [ ] csp.svg
+- [ ] xppen.svg
+- [ ] wacom.svg
+- [ ] tourbox.svg
