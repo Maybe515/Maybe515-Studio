@@ -35,7 +35,10 @@ export const skillIcons = {
     Photoshop: "Photoshop.svg",
     Illustrator: "Illustrator.svg",
     Blender: "Blender.svg",
-    Discord: "Discord.svg"
+    Discord: "Discord.svg",
+    XPPen: "XP-Pen.svg",
+    CSP: "ClipStudioPaint.svg",
+    TourBox: "TourBox.svg"
 };
 
 
