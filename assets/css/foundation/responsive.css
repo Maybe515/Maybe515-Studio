@@ -186,7 +186,7 @@
         width: 35px;
         height: 35px;
     }
-    
+
     .blog-list {
         margin: 10px 0;
     }
@@ -224,31 +224,9 @@
         margin: 20px 0 10px;
     }
 
-    .profile-skills {
-        margin-bottom: 30px;
-    }
-
-    .skills-group h4 {
-        padding-left: 18px;
-    }
-
-    .skill-block h5,
-    .skill-block ul {
-        padding-left: 40px;
-    }
-
-    .skills-group h4,
-    .skill-block h5 {
-        margin: 10px 0 6px;
-    }
-
-    .profile-links {
-        margin-bottom: 30px;
-    }
-
     .profile-link {
-        padding: 7px;
         gap: 6px;
+        padding: 7px;
     }
 
     .skill-icons {
@@ -283,10 +261,7 @@
         right: auto !important;
     }
 
-    .timeline-year {
-        padding: 0;
-    }
-
+    .timeline-year,
     .timeline-month {
         margin: 0;
         padding: 0;

@@ -44,7 +44,7 @@
 .profile-section-title {
     font-size: clamp(1.3rem, 4.5vw, 1.75rem);
     font-weight: 700;
-    margin: 60px 0 24px;
+    margin: 35px 0 10px;
     text-align: left;
     color: var(--accent-strong, #1a1a1a);
     display: flex;
@@ -68,7 +68,7 @@
 
 /* ----- Skills Section ----- */
 .profile-skills {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /* 小見出し：Programming / Others */
@@ -80,8 +80,8 @@
 .skills-group h4 {
     font-size: clamp(1rem, 3.5vw, 1.35rem);
     font-weight: 600;
-    margin-bottom: 16px;
-    padding-left: 28px;
+    margin: 10px 0 6px;
+    padding-left: 18px;
     color: var(--accent-strong, #1a1a1a);
 }
 
@@ -92,10 +92,14 @@
 
 .skill-block h5 {
     font-size: clamp(0.9rem, 3vw, 1.15rem);
-    margin-bottom: 10px;
-    padding-left: 52px;
+    margin: 10px 0 6px;
     color: var(--accent, #555);
     text-transform: capitalize;
+}
+
+.skill-block h5,
+.skill-block ul {
+    padding-left: 40px;
 }
 
 /* Skill Icons */
@@ -125,7 +129,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .profile-link {
@@ -225,7 +229,6 @@
 .timeline-year {
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     font-weight: 700;
-    margin-top: 6px;
     color: var(--accent-strong, #1a1a1a);
 }
 
@@ -233,7 +236,6 @@
     font-size: clamp(0.9rem, 2.5vw, 0.95rem);
     font-weight: 600;
     color: var(--accent, #333);
-    margin-top: 4px;
     padding: 0 4px;
 }
 

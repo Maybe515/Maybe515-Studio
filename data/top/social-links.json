@@ -3,20 +3,17 @@
     {
       "name": "X",
       "url": "https://x.com/Maybe515",
-      "icon": "x.svg",
-      "class": "social-x"
+      "icon": "x.svg"
     },
     {
       "name": "GitHub",
       "url": "https://github.com/Maybe515",
-      "icon": "Github.svg",
-      "class": "social-github"
+      "icon": "github.svg"
     },
     {
       "name": "pixiv",
       "url": "https://www.pixiv.net/users/14572354",
-      "icon": "pixiv.svg",
-      "class": "social-pixiv"
+      "icon": "pixiv.svg"
     }
   ],
   "more": [
@@ -24,16 +21,6 @@
       "name": "Skeb",
       "url": "https://skeb.jp/@Maybe515",
       "icon": "skeb.svg"
-    },
-    {
-      "name": "Bluesky",
-      "url": "#",
-      "icon": "bluesky.svg"
-    },
-    {
-      "name": "Discord",
-      "url": "#",
-      "icon": "discord.svg"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "SVG", "Android", "AppInventor"],
-    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "VBA", "DiscordBot", "Discordjs", "RaspberryPi"],
-    "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
+    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "VBA", "RaspberryPi"],
+    "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord", "XPPen", "CSP", "TourBox"]
   },
   "links": [
     { "name": "X", "url": "https://x.com/Maybe515", "icon": "x.svg" },
@@ -12,18 +12,18 @@
   "timeline": {
     "2026": [
       { "category": "program", "month": "1", "event": "Maybe515 Studio を公開する" },
-      { "category": "illust", "month": "1", "event": "Skeb を稼働させる" }
+      { "category": "illust", "month": "1", "event": "Skeb の運用を開始する" }
     ],
     "2025": [
-      { "category": "program", "month": "4", "event": "C# を学習し始める" },
-      { "category": "program", "month": "6", "event": "Python を学習し始める" },
+      { "category": "education", "month": "4", "event": "C# を学習し始める" },
+      { "category": "education", "month": "6", "event": "Python を学習し始める" },
       { "category": "program", "month": "7", "event": "Nostr監視ちゃん を公開する" },
       { "category": "program", "month": "7", "event": "Nostrリンクちゃん を公開する" },
       { "category": "program", "month": "9", "event": "ゼンゼロダメージ計算ツール を公開する" },
       { "category": "illust", "month": "11", "event": "Nostrasia2025 のスライドを描く" }
     ],
     "2024": [
-      { "category": "program", "month": "3", "event": "GitHub で初めてリポジトリを作成する" }
+      { "category": "program", "month": "3", "event": "GitHub で初めてリポジトリを作成・公開する" }
     ],
     "2023": [
       { "category": "illust", "month": "5", "event": "デジタルイラスト を描き始める" }
@@ -38,24 +38,24 @@
       { "category": "program", "month": "10", "event": "C言語 で チュウニズムの内部数値 (貢献値、リザルト) を計算するツール を作成する" },
       { "category": "program", "month": "10", "event": "C言語 で 基数変換する計算機 を作成する" },
       { "category": "illust", "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
-      { "category": "program", "month": "", "event": "HTML, CSS を学習し始める" },
-      { "category": "program", "month": "", "event": "JavaScript を学習し始める" },
+      { "category": "education", "month": "", "event": "HTML, CSS を学習し始める" },
+      { "category": "education", "month": "", "event": "JavaScript を学習し始める" },
       { "category": "create", "month": "", "event": "電子オルゴール を自作する" },
-      { "category": "program", "month": "", "event": "MELSEC を用いた シーケンス制御 を学習し始める" }
+      { "category": "education", "month": "8", "event": "MELSEC を用いた シーケンス制御 を学習し始める" }
     ],
     "2016": [
       { "category": "illust", "month": "4", "event": "pixiv で初めて作品を投稿する" },
       { "category": "create", "month": "10", "event": "消しゴムはんこ・切り絵を始める" },
       { "category": "illust", "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
-      { "category": "create", "month": "", "event": "画像の編集加工 を学習し始める" },
-      { "category": "program", "month": "", "event": "IC制御 を学習し始める" },
-      { "category": "program", "month": "", "event": "3DCG を学習し始める" }
+      { "category": "education", "month": "", "event": "画像の編集加工 を学習し始める" },
+      { "category": "education", "month": "", "event": "IC制御 を学習し始める" },
+      { "category": "education", "month": "", "event": "3DCG を学習し始める" }
     ],
     "2015": [
       { "category": "illust", "month": "10", "event": "母校の行事に関する装飾 (イラスト) を担当する" },
       { "category": "illust", "month": "11", "event": "同人サークル『MAYBEL』 を開設する" },
-      { "category": "program", "month": "", "event": "C言語 を学習し始める" },
-      { "category": "program", "month": "", "event": "VBA を学習し始める" }
+      { "category": "education", "month": "", "event": "C言語 を学習し始める" },
+      { "category": "education", "month": "", "event": "VBA を学習し始める" }
     ],
     "2014": [
       { "category": "illust", "month": "3", "event": "美少女系イラスト (アニメ調) を描き始める" },
