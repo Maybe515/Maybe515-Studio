@@ -1,15 +1,17 @@
-# ToDo List
+## Site Pages
+- [] Contact
+
 ## Create SVG Icons
 ### Social
-- [x] x.svg
-- [ ] misskey.svg
-- [x] github.svg
+- [x] X.svg
+- [ ] Misskey.svg
+- [x] Github.svg
 - [x] pixiv.svg
-- [x] skeb.svg
+- [x] Skeb.svg
 
 ### Skill, Tools
-- [ ] csp.svg
-- [ ] xppen.svg
-- [ ] wacom.svg
-- [ ] tourbox.svg
-
+- [x] CSP.svg
+- [x] XPPen.svg
+- [ ] Wacom.svg
+- [x] TourBox.svg
+- [ ] Inkscape

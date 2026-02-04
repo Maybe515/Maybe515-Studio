@@ -2,7 +2,7 @@
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "SVG", "Android", "AppInventor"],
     "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "VBA", "RaspberryPi"],
-    "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord"]
+    "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Photoshop", "Illustrator", "Blender", "Discord", "XPPen", "CSP", "TourBox"]
   },
   "links": [
     { "name": "X", "url": "https://x.com/Maybe515", "icon": "x.svg" },
