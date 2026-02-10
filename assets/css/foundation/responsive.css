@@ -200,22 +200,7 @@
         box-sizing: border-box;
     }
 
-    /* ----- fanart.html ----- */
-    .fanart-grid {
-        gap: 16px;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    }
-
-    .fanart-modal img {
-        max-width: 95vw;
-        max-height: 80vh;
-    }
-
-    /* ----- profile.html ----- */
-    .profile-container {
-        padding: 30px 24px;
-    }
-
+    /* ----- profile ----- */
     .profile-bio {
         margin: 0 auto 30px;
     }
@@ -265,5 +250,16 @@
     .timeline-month {
         margin: 0;
         padding: 0;
+    }
+
+    /* ----- fanart.html ----- */
+    .fanart-grid {
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .fanart-modal img {
+        max-width: 95vw;
+        max-height: 80vh;
     }
 }

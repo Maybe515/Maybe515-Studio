@@ -5,12 +5,12 @@ import { loadCssFiles } from "../data/load-css.js";
 import { initHeaderOffset } from "../data/header-offset.js";
 import { initBlogList } from "../pages/top/blog-list.js";
 import { initProjects } from "../pages/top/project-grid.js";
+import { initProfile } from "../pages/top/profile-container.js";
 import { initSidebarToggle } from "../pages/top/sidebar-toggle.js";
 import { initSlideshow } from "../pages/top/slideshow.js";
 import { initSocialIcons } from "../pages/top/social-icons.js";
 import { initSocialToggle } from "../pages/top/social-toggle.js";
 import { loadFanart } from "../pages/fanart/fanart-grid.js";
-import { initProfile } from "../pages/profile/profile-container.js";
 
 import { updateDeviceState } from "../data/responsive-state.js";
 
@@ -26,14 +26,11 @@ switch (page) {
         initSlideshow();
         initBlogList();
         initProjects();
+        initProfile();
         updateDeviceState();
         break;
 
     case "fanart":
         loadFanart();
-        break;
-
-    case "profile":
-        initProfile();
         break;
 }

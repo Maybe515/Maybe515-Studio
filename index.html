@@ -21,11 +21,11 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#top">Top</a></li>
-                <li><a href="./pages/profile.html">Profile</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="./pages/blog.html">Blog</a></li>
-                <li><a href="./pages/contact.html" class="contact-link">Contact</a></li>
+                <li><a href="#contact" class="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -44,14 +44,15 @@
                     <main class="hero">
                         <h1 class="hero-title">めいびぃさんの隠れ家</h1>
                         <p class="hero-subtitle">
-                            ようこそ！こちらでは、今までの活動内容をまとめています。
+                            ようこそ！ここはめいびぃのホームページ兼ポートフォリオです。<br>
+                            こちらでは今までに手掛けた作品や身につけたスキル、活動内容をまとめています。
                         </p>
                     </main>
 
                     <!-- ===== ギャラリーセクション ===== -->
                     <section class="section" id="gallery">
-                        <h2 class="section-title">作品ギャラリー</h2>
-                        <p class="section-desc">デジタルアート作品の一部を紹介します。</p>
+                        <h2 class="section-title">Gallery</h2>
+                        <p class="section-desc">今までに描いたデジタルアート作品の一部をご紹介します。</p>
 
                         <!-- スライドショー -->
                         <div class="slideshow-container" id="slideshow"></div>
@@ -64,11 +65,39 @@
 
                     <!-- ===== プロジェクトセクション ===== -->
                     <section class="section projects" id="projects">
-                        <h2 class="section-title">プロジェクト</h2>
-                        <p class="section-desc">技術的な取り組みやツール開発を一部紹介します。</p>
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-desc">技術的な取り組みや開発したツールを一部ご紹介します。</p>
 
                         <!-- プロジェクトリンク -->
                         <div class="project-grid"></div>
+                    </section>
+
+                    <!-- ===== プロフィール ===== -->
+                    <main class="profile-container" id="profile">
+                        <!-- ===== Skills ===== -->
+                        <section class="section" id="skills">
+                            <h2 class="section-title">My Skills</h2>
+                            <p class="section-desc">今までに触れたものや習得したスキルをまとめています。</p>
+                            <section class="profile-skills"></section>
+                        </section>
+
+                        <!-- ===== Timeline ===== -->
+                        <section class="section" id="timeline">
+                            <h2 class="section-title">Active Timeline</h2>
+                            <p class="section-desc">今までの活動内容をまとめています。</p>
+                            <ul class="profile-timeline timeline-alt"></ul>
+                        </section>
+                    </main>
+
+                    <!-- ===== コンタクトセクション ===== -->
+                    <section class="section" id="contact">
+                        <h2 class="section-title">Contact me</h2>
+                        <p class="section-desc">
+                            最後までご覧いただきありがとうございました。<br>
+                            本サイトや私について何かございましたら下記フォーム、<br>
+                            もしくはSNSのDMにてご連絡ください。
+                        </p>
+
                     </section>
                 </div>
 
@@ -77,15 +106,19 @@
                     <div class="sidebar-content">
                         <div class="sidebar-profile">
                             <img src="./assets/img/ui/profile-icon.png" alt="プロフィールアイコン" class="sidebar-icon">
-                            <div class="sidebar-username">めいびぃ</div>
+                            <div class="sidebar-username">めいびぃ / Maybe515</div>
+                            <div class="sidebar-desc">Illustration, Programing, and more...</div>
 
                             <h3>About Me</h3>
-                            <p>自由気ままに生きてます。<br>イラスト描いたり、ツールを作ってたりします。</p>
+                            <p>
+                                自由気ままに生きてます。<br>
+                                イラストやプログラミングの他、旅行やゲーム、ダーツと幅広く色んなことをしています。
+                            </p>
 
                             <h3>Connect with me</h3>
                             <div class="sidebar-social">
                                 <div class="social-links"></div>
-                                
+
                                 <button class="social-toggle">▼ もっと見る</button>
                                 <div class="social-more"></div>
                             </div>

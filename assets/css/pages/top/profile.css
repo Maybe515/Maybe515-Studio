@@ -1,0 +1,205 @@
+/* 全体レイアウト */
+.profile {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.profile-icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-name {
+    font-size: clamp(1.65rem, 6vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.profile-title {
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    font-weight: 500;
+    color: var(--text-muted, #666);
+    margin-bottom: 20px;
+}
+
+.profile-bio {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    color: var(--text-muted, #555);
+}
+
+/* 大見出し */
+.profile-section-title {
+    font-size: clamp(1.3rem, 4.5vw, 1.75rem);
+    font-weight: 700;
+    margin: 35px 0 10px;
+    text-align: left;
+    color: var(--accent-strong, #1a1a1a);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* 下線 */
+.profile-section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--bg-secondary, #e5e5e5);
+    border-radius: 2px;
+}
+
+/* ----- Skills Section ----- */
+.profile-skills {
+    margin-bottom: 30px;
+}
+
+/* 小見出し：Programming / Others */
+.skills-group {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.skills-group h4 {
+    font-size: clamp(1rem, 3.5vw, 1.35rem);
+    font-weight: 600;
+    margin: 10px 0 6px;
+    padding-left: 18px;
+    color: var(--accent-strong, #1a1a1a);
+}
+
+/* 小項目：Frontend / Backend / Tools */
+.skill-block {
+    margin-bottom: 18px;
+}
+
+.skill-block h5 {
+    font-size: clamp(0.9rem, 3vw, 1.15rem);
+    margin: 10px 0 6px;
+    color: var(--accent, #555);
+    text-transform: capitalize;
+}
+
+.skill-block h5,
+.skill-block ul {
+    padding-left: 40px;
+}
+
+/* Skill Icons */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-left: 52px;
+}
+
+.skill-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.skill-icons img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* ----- Timeline Section ----- */
+.timeline-alt {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* 中央ライン */
+.timeline-alt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--bg-secondary, #e5e5e5);
+    transform: translateX(-1px);
+}
+
+/* 各項目 */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+/* 左右交互配置 */
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* ノード */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 14px;
+    height: 14px;
+    background: var(--accent-strong, #1a1a1a);
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 2;
+}
+
+/* 年にはノードを表示しない */
+.timeline-year::before {
+    display: none;
+}
+
+/* 左側ノード位置 */
+.timeline-item.left::before {
+    right: -10px;
+}
+
+/* 右側ノード位置 */
+.timeline-item.right::before {
+    left: -10px;
+}
+
+/* 年・月・イベント */
+.timeline-year {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-weight: 700;
+    color: var(--accent-strong, #1a1a1a);
+}
+
+.timeline-month {
+    font-size: clamp(0.9rem, 2.5vw, 0.95rem);
+    font-weight: 600;
+    color: var(--accent, #333);
+    padding: 0 4px;
+}
+
+.timeline-event {
+    font-size: clamp(0.9rem, 2.5vw, 0.95rem);
+    color: var(--text-muted, #555);
+    line-height: 1.6;
+}

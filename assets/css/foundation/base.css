@@ -25,7 +25,7 @@ html {
     --transition-mid: 0.25s ease;
 }
 
-#gallery, #projects {
+#gallery, #projects, #profile, #skills, #timeline, #contact {
     scroll-margin-top: var(--header-height);
 }
 

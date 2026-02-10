@@ -55,7 +55,15 @@
     font-size: clamp(0.9rem, 3vw, 1rem);
     font-weight: 600;
     color: #444;
-    margin: 6px 0 14px;
+    margin: 6px 0;
+}
+
+.sidebar-desc {
+    text-align: center;
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    font-weight: 500;
+    color: var(--text-muted, #666);
+    margin: 6px 0;
 }
 
 /* ブログ */
