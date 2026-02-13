@@ -12,6 +12,8 @@
 
     .project-grid {
         flex-direction: column;
+        display: inline-flex;
+        width: 90%;
     }
 }
 
@@ -62,6 +64,18 @@
     }
 }
 
+@media (max-width: 925px) {
+    
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+        padding: 12px 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* ----- 825px以下（スマホ） ----- */
 @media (max-width: 825px) {
 
@@ -78,15 +92,11 @@
         gap: 20px;
     }
 
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 12px 16px;
-        width: 100%;
-        box-sizing: border-box;
+    .section {
+        padding: 40px 12px;
     }
 
+    /* ----- header ----- */
     .site-title {
         font-size: clamp(1rem, 5vw, 1.6rem);
         white-space: nowrap;
@@ -104,6 +114,7 @@
         white-space: nowrap;
     }
 
+    /* ----- side toggle ----- */
     .side-toggle {
         display: flex;
         justify-content: center;
@@ -152,6 +163,7 @@
         }
     }
 
+    /* ----- sidebar ----- */
     .sidebar {
         position: fixed;
         top: calc(var(--header-height) + 40px + 10px);
@@ -169,6 +181,7 @@
         transform: translateX(0);
     }
 
+    /* ----- sidebar contents ----- */
     .sidebar-profile {
         margin-bottom: 20px;
         padding-bottom: 15px;
@@ -191,31 +204,18 @@
         margin: 10px 0;
     }
 
-    .section {
-        padding: 40px 12px;
-    }
-
+    /* ----- gallery ----- */
     .fanart-btn {
         width: 100%;
         box-sizing: border-box;
     }
 
-    /* ----- fanart.html ----- */
-    .fanart-grid {
-        gap: 16px;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    /* ----- projects ----- */
+    .project-grid {
+        width: 80%;
     }
 
-    .fanart-modal img {
-        max-width: 95vw;
-        max-height: 80vh;
-    }
-
-    /* ----- profile.html ----- */
-    .profile-container {
-        padding: 30px 24px;
-    }
-
+    /* ----- profile ----- */
     .profile-bio {
         margin: 0 auto 30px;
     }
@@ -265,5 +265,16 @@
     .timeline-month {
         margin: 0;
         padding: 0;
+    }
+
+    /* ----- fanart.html ----- */
+    .fanart-grid {
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .fanart-modal img {
+        max-width: 95vw;
+        max-height: 80vh;
     }
 }

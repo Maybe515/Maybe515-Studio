@@ -1,6 +1,6 @@
 /* ----- セクション共通 ----- */
 .section {
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -13,6 +13,14 @@
 .section-title {
     font-size: clamp(1.4rem, 4.5vw, 2rem);
     margin-bottom: 10px;
+    padding-left: 32px;
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 90%;
 }
 
 .section-desc {
@@ -20,3 +28,24 @@
     color: #555;
     margin-bottom: 40px;
 }
+
+/* アイコン共通 */ 
+.section-title .icon { 
+    width: 32px; 
+    height: 32px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    opacity: 0.85; transition: 
+    opacity 0.2s ease; 
+}
+
+.section-title:hover .icon {
+    opacity: 1;
+}
+
+/* アイコン割り当て */
+.section-title[data-icon="gallery"] .icon {background-image: url("../../img/ui/paintbrush.svg");}
+.section-title[data-icon="projects"] .icon {background-image: url("../../img/ui/task-list.svg");}
+.section-title[data-icon="skills"] .icon {background-image: url("../../img/ui/light-bulb.svg");}
+.section-title[data-icon="timeline"] .icon {background-image: url("../../img/ui/time.svg");}
+.section-title[data-icon="contact"] .icon {background-image: url("../../img/ui/email.svg");}
