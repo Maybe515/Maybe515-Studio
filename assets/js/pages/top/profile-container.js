@@ -5,13 +5,6 @@ const BASE_PATH = getBasePath();
 const JSON_PATH = BASE_PATH + "/data/top/profile-contents.json";
 const SKILL_IMG_PATH = BASE_PATH + "/assets/img/skill";
 
-const categoryIcons = {
-    "create": "✨",
-    "education": "📚",
-    "illust": "🎨",
-    "program": "💻"
-};
-
 export async function initProfile() {
     const res = await fetch(JSON_PATH);
     const data = await res.json();
@@ -27,7 +20,7 @@ export async function initProfile() {
     programingBlock.innerHTML = `<h4>Programing</h4>`;
     skillContainer.appendChild(programingBlock);
 
-    ["frontend", "backend", "tools"].forEach(category => {
+    ["front-end", "back-end", "tools"].forEach(category => {
         if (!data.skills[category]) return;
 
         const wrapper = document.createElement("div");
@@ -73,8 +66,6 @@ export async function initProfile() {
         const yearItem = document.createElement("li");
         yearItem.className = "timeline-item timeline-year";
         yearItem.textContent = year;
-        yearItem.style.width = "100%"; // 中央に表示
-        yearItem.style.textAlign = "center";
         timeline.appendChild(yearItem);
 
         // 月を降順にソート
@@ -83,15 +74,12 @@ export async function initProfile() {
             .forEach(entry => {
 
                 const li = document.createElement("li");
-                li.className = "timeline-item";
-
-                // 左右交互に class を付与
-                li.classList.add(index % 2 === 0 ? "left" : "right");
-                index++;
+                li.className = "timeline-item timeline-contents";
+                li.dataset.category = entry.category;
 
                 li.innerHTML = `
-                    <div class="timeline-month">${categoryIcons[entry.category]} ${monthNames[entry.month]}</div>
-                    <div class="timeline-event">${entry.event}</div>
+                     <span class="timeline-month">${monthNames[entry.month] ?? ""}</span>
+                     <span class="timeline-event">${entry.event}</span>
                 `;
 
                 timeline.appendChild(li);

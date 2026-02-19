@@ -62,12 +62,11 @@
 
 /* ----- Skills Section ----- */
 .profile-skills {
-    margin-bottom: 30px;
+    margin: 0 1.5rem 30px;
 }
 
 /* 小見出し：Programming / Others */
 .skills-group {
-    margin-bottom: 40px;
     text-align: left;
 }
 
@@ -118,88 +117,81 @@
 }
 
 /* ----- Timeline Section ----- */
-.timeline-alt {
+.profile-timeline {
     position: relative;
+    margin: 0 1rem;
     padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-/* 中央ライン */
-.timeline-alt::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background: var(--bg-secondary, #e5e5e5);
-    transform: translateX(-1px);
+.timeline-alt {
+    padding-left: 32px;
+    list-style: none;
+    text-align: left;
 }
 
 /* 各項目 */
 .timeline-item {
     position: relative;
-    width: 50%;
-    padding: 10px 30px;
-    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
 }
 
-/* 左右交互配置 */
-.timeline-item.left {
-    left: 0;
-    text-align: right;
-}
-
-.timeline-item.right {
-    left: 50%;
-    text-align: left;
+.timeline-contents {
+    margin-left: 1.5rem;
+    padding: 10px 0 10px 47px;
+    border-left: 4px solid var(--bg-secondary, #505050);
 }
 
 /* ノード */
-.timeline-item::before {
+.timeline-contents::before {
     content: "";
-    position: absolute;
-    top: 28px;
-    width: 14px;
-    height: 14px;
-    background: var(--accent-strong, #1a1a1a);
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 2;
+    position: absolute;    
+    left: 1em;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
 }
 
-/* 年にはノードを表示しない */
-.timeline-year::before {
-    display: none;
-}
+/* カテゴリ別アイコン */ 
+.timeline-contents[data-category="illust"]::before { background-image: url("/assets/img/ui/canvas.svg"); } 
+.timeline-contents[data-category="program"]::before { background-image: url("/assets/img/ui/laptop.svg"); } 
+.timeline-contents[data-category="education"]::before { background-image: url("/assets/img/ui/education.svg"); } 
+.timeline-contents[data-category="create"]::before { background-image: url("/assets/img/ui/stars.svg"); } 
 
-/* 左側ノード位置 */
-.timeline-item.left::before {
-    right: -10px;
-}
-
-/* 右側ノード位置 */
-.timeline-item.right::before {
-    left: -10px;
-}
-
-/* 年・月・イベント */
+/* 年 */
 .timeline-year {
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
     font-weight: 700;
     color: var(--accent-strong, #1a1a1a);
+    margin: 12px 0 5px;
 }
 
+/* 月 */
 .timeline-month {
     font-size: clamp(0.9rem, 2.5vw, 0.95rem);
     font-weight: 600;
     color: var(--accent, #333);
-    padding: 0 4px;
+    margin-bottom: 4px;
 }
 
+/* イベント */
 .timeline-event {
     font-size: clamp(0.9rem, 2.5vw, 0.95rem);
     color: var(--text-muted, #555);
     line-height: 1.6;
+}
+
+.timeline-remarks {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.timeline-remarks img {
+    width: 15px;
+    height: 15px;
 }

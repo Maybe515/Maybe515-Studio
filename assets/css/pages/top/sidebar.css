@@ -20,6 +20,11 @@
 .sidebar-content h3 {
     font-size: clamp(0.9rem, 3.5vw, 1.2rem);
     margin-bottom: 10px;
+
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%;
 }
 
 .sidebar-content p {
@@ -31,6 +36,20 @@
 .sidebar-content a {
     font-size: clamp(0.8rem, 3vw, 0.95rem);
 }
+
+/* アイコン共通 */ 
+.sidebar-content h3 .icon { 
+    width: 18px; 
+    height: 18px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    opacity: 0.85; transition: 
+    opacity 0.2s ease; 
+}
+
+.sidebar-content h3[data-icon="about"] .icon {background-image: url("../../../img/ui/user.svg");}
+.sidebar-content h3[data-icon="connect"] .icon {background-image: url("../../../img/ui/globe.svg");}
+.sidebar-content h3[data-icon="blog"] .icon {background-image: url("../../../img/ui/file.svg");}
 
 /* プロフィール */
 .sidebar-profile {

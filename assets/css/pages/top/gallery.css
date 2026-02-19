@@ -1,5 +1,9 @@
 /* ----- ギャラリーセクション ----- */
-.gallery-link {
+.gallery .img {
+    width: 100%
+}
+
+.fanart-link {
     margin-top: 30px;
     text-align: center;
 }

@@ -12,6 +12,8 @@
 
     .project-grid {
         flex-direction: column;
+        display: inline-flex;
+        width: 90%;
     }
 }
 
@@ -62,6 +64,18 @@
     }
 }
 
+@media (max-width: 925px) {
+    
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 13px;
+        padding: 12px 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* ----- 825px以下（スマホ） ----- */
 @media (max-width: 825px) {
 
@@ -78,15 +92,11 @@
         gap: 20px;
     }
 
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 12px 16px;
-        width: 100%;
-        box-sizing: border-box;
+    .section {
+        padding: 40px 12px;
     }
 
+    /* ----- header ----- */
     .site-title {
         font-size: clamp(1rem, 5vw, 1.6rem);
         white-space: nowrap;
@@ -104,6 +114,7 @@
         white-space: nowrap;
     }
 
+    /* ----- side toggle ----- */
     .side-toggle {
         display: flex;
         justify-content: center;
@@ -152,6 +163,7 @@
         }
     }
 
+    /* ----- sidebar ----- */
     .sidebar {
         position: fixed;
         top: calc(var(--header-height) + 40px + 10px);
@@ -169,6 +181,7 @@
         transform: translateX(0);
     }
 
+    /* ----- sidebar contents ----- */
     .sidebar-profile {
         margin-bottom: 20px;
         padding-bottom: 15px;
@@ -191,13 +204,15 @@
         margin: 10px 0;
     }
 
-    .section {
-        padding: 40px 12px;
-    }
-
+    /* ----- gallery ----- */
     .fanart-btn {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    /* ----- projects ----- */
+    .project-grid {
+        width: 80%;
     }
 
     /* ----- profile ----- */
@@ -218,38 +233,21 @@
         margin: 8px 0;
     }
 
-    .timeline-alt {
-        margin: 0px 20px;
+    .profile-timeline {
+        margin: 0 1.5rem;
     }
 
-    .timeline-alt::before {
-        left: 20px;
+    .timeline-contents {
+        padding: 8px 0 8px 47px;
     }
 
-    .timeline-item {
-        width: 100%;
-        padding: 5px 20px 5px 50px;
-        text-align: left !important;
-        left: 0 !important;
-    }
-
-    .timeline-item::before {
-        left: 0px !important;
-        right: auto !important;
-        width: 10px;
-        height: 10px;
-    }
-
-    .timeline-item.left::before,
-    .timeline-item.right::before {
-        left: 13px !important;
+    .timeline-contents::before {
+        top: 9px;
         right: auto !important;
     }
 
-    .timeline-year,
-    .timeline-month {
-        margin: 0;
-        padding: 0;
+    .timeline-year {
+        margin: 8px 0;
     }
 
     /* ----- fanart.html ----- */
