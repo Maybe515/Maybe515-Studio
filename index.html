@@ -115,10 +115,24 @@
                         </h2>
                         <p class="section-desc">
                             最後までご覧いただきありがとうございます。<br>
-                            本サイトや私について何かございましたら下記フォーム、<br>
-                            もしくはSNSのDMにてご連絡ください。
+                            本サイトや私について何かございましたら下記フォーム、もしくはSNSのDMにてご連絡ください。
                         </p>
 
+                        <form class="form-contact" action="https://formspree.io/f/xxxxxxx" method="POST">
+                            <div class="form-group">
+                                <input id="name" type="text" name="name" placeholder="Your Name" required>
+                                <input id="email" type="email" name="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Message" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit">Send</button>
+                            </div>
+                        </form>
                     </section>
                 </div>
 
