@@ -64,7 +64,7 @@
     }
 }
 
-@media (max-width: 925px) {
+@media (max-width: 950px) {
 
     .site-header {
         flex-direction: column;
@@ -264,8 +264,12 @@
         width: auto;
     }
 
+    .form-btn {
+        margin-top: 15px;
+    }
+
     .btn-submit {
-        width: auto;
+        margin: auto;
     }
 
     /* ----- fanart.html ----- */
