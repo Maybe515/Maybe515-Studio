@@ -26,7 +26,7 @@
 .section-desc {
     font-size: clamp(0.9rem, 3.5vw, 1.1rem);
     color: #555;
-    margin-bottom: 40px;
+    margin: 0 2.5rem 40px;
 }
 
 /* アイコン共通 */ 
@@ -35,8 +35,8 @@
     height: 32px; 
     background-size: contain; 
     background-repeat: no-repeat; 
-    opacity: 0.85; transition: 
-    opacity 0.2s ease; 
+    opacity: 0.85; 
+    transition: opacity 0.2s ease; 
 }
 
 .section-title:hover .icon {

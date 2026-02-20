@@ -1,7 +1,7 @@
 {
   "skills": {
-    "frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "SVG", "Android", "AppInventor"],
-    "backend": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "VBA", "RaspberryPi"],
+    "front-end": ["HTML", "CSS", "JavaScript", "TypeScript", "jQuery", "SVG", "Android", "AppInventor"],
+    "back-end": ["C", "CPP", "CSharp", "Java", "Python", "Ruby", "nodejs" , "npm", "SQLite", "dotNET", "DiscordBot", "Discordjs", "VBA", "RaspberryPi"],
     "tools": ["Windows", "Cmd", "PowerShell", "VSCode", "VisualStudio", "GitHub", "Discord", "Blender", "Photoshop", "Illustrator", "Gimp", "Inkscape", "XPPen", "Wacom", "CSP", "TourBox"]
   },
   "links": [

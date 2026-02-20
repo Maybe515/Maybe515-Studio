@@ -15,6 +15,7 @@ const cssFiles = [
     "/pages/top/slideshow.css",
     "/pages/top/social.css",
     "/pages/top/profile.css",
+    "/pages/top/contact.css",
     "/pages/fanart/fanart.css",
     "/pages/fanart/modal.css",
     "/foundation/responsive.css"

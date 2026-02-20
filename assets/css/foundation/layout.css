@@ -30,3 +30,33 @@
     color: #777;
     font-size: clamp(0.75rem, 2.8vw, 0.9rem);
 }
+
+/* ----- トップボタン ----- */
+.back-to-top {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent-strong, #1a1a1a);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 999;
+}
+
+.back-to-top.visible {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}

@@ -64,8 +64,7 @@
     }
 }
 
-@media (max-width: 925px) {
-    
+@media (max-width: 950px) {
     .site-header {
         flex-direction: column;
         align-items: flex-start;
@@ -233,38 +232,54 @@
         margin: 8px 0;
     }
 
-    .timeline-alt {
-        margin: 0px 20px;
+    .profile-timeline {
+        margin: 0 1.5rem;
     }
 
-    .timeline-alt::before {
-        left: 20px;
+    .timeline-contents {
+        padding: 8px 0 8px 47px;
     }
 
-    .timeline-item {
-        width: 100%;
-        padding: 5px 20px 5px 50px;
-        text-align: left !important;
-        left: 0 !important;
-    }
-
-    .timeline-item::before {
-        left: 0px !important;
-        right: auto !important;
-        width: 10px;
-        height: 10px;
-    }
-
-    .timeline-item.left::before,
-    .timeline-item.right::before {
-        left: 13px !important;
+    .timeline-contents::before {
+        top: 9px;
         right: auto !important;
     }
 
-    .timeline-year,
-    .timeline-month {
-        margin: 0;
-        padding: 0;
+    .timeline-year {
+        margin: 8px 0;
+    }
+
+    /* ----- contact ----- */
+    .form-contact {
+        gap: 8px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-contact input,
+    .form-contact textarea {
+        width: auto;
+    }
+
+    .form-btn {
+        margin-top: 15px;
+    }
+
+    .btn-submit {
+        margin: auto;
+    }
+
+    /* ----- fanart.html ----- */
+    .fanart-grid {
+        gap: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .fanart-modal img {
+        max-width: 95vw;
+        max-height: 80vh;
     }
 
     /* ----- fanart.html ----- */

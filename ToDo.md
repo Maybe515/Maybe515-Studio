@@ -1,5 +1,5 @@
 ## Site Pages
-- [] Contact
+- [] Blog.html
 
 ## Create SVG Icons
 ### Social
@@ -12,6 +12,6 @@
 ### Skill, Tools
 - [x] CSP.svg
 - [x] XPPen.svg
-- [ ] Wacom.svg
+- [x] Wacom.svg
 - [x] TourBox.svg
-- [ ] Inkscape
+- [x] Inkscape.svg
