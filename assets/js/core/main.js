@@ -10,6 +10,7 @@ import { initSidebarToggle } from "../pages/top/sidebar-toggle.js";
 import { initSlideshow } from "../pages/top/slideshow.js";
 import { initSocialIcons } from "../pages/top/social-icons.js";
 import { initSocialToggle } from "../pages/top/social-toggle.js";
+import { initTopButton } from "../pages/top/top-button.js";
 import { loadFanart } from "../pages/fanart/fanart-grid.js";
 
 import { updateDeviceState } from "../data/responsive-state.js";
@@ -27,6 +28,7 @@ switch (page) {
         initBlogList();
         initProjects();
         initProfile();
+        initTopButton();
         updateDeviceState();
         break;
 
