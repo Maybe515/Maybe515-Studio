@@ -93,7 +93,7 @@
     opacity: 1;
 }
 
-/* アイコンの割り当て（デフォルト） */
+/* アイコンの割り当て */
 .nav-list a[data-icon="gallery"] {--icon: url("../../img/ui/paintbrush.svg");}
 .nav-list a[data-icon="projects"] {--icon: url("../../img/ui/task-list.svg");}
 .nav-list a[data-icon="profile"] {--icon: url("../../img/ui/user.svg");}
